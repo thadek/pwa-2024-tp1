@@ -54,7 +54,7 @@ export default function TasksContainer() {
 
 
 
-        <Title title="Grupo 13 PWA - TodoList" />
+        <Title title="Grupo 12 PWA - TodoList" />
       
       <div className="flex gap-3 w-full">
       <SearchBar setSearch={setSearch}  />

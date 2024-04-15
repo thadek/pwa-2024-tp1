@@ -1,6 +1,5 @@
 //import './Title.module.css'
 
-import style from "./Title.module.css"
 
 export default function Title({title}: {title: string}){ 
   return (
