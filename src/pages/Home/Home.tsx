@@ -1,9 +1,8 @@
-import Title from "../../components/Title/Title";
+import TasksContainer from "../../components/TasksContainer/TasksContainer";
+
 
 export default function Home(){
   return (
-    <div className="min-h-screen size-full ">
-      <Title title="Home"/>
-    </div>
+    <TasksContainer/>
   )
 }
