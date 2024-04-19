@@ -10,6 +10,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import Button from "../Buttons/Button/Button";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import Title from "../Title/Title";
+import TaskCounter from "../TaskCounter/TaskCounter.tsx";
 
 
 
@@ -48,6 +49,10 @@ export default function TasksContainer() {
   return (<>
 
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+
+      <div className="absolute top-0 left-0 p-4 bg-gray-200">
+        <TaskCounter />
+      </div>
 
 
       <div className="flex flex-col gap-3  p-10 rounded items-center justify-center">

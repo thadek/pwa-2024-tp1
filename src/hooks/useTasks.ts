@@ -9,18 +9,15 @@ export const useTasks = () => {
 
   useEffect(() => {
     const obtainTasks = async () => {
-    
-        const tasks = localStorage.getItem("tasks");
-        if (tasks) {
-          setTasks(JSON.parse(tasks));
-        }
-        setIsLoading(false);
- 
+      const tasks = localStorage.getItem("tasks");
+      if (tasks) {
+        setTasks(JSON.parse(tasks));
+      }
+      setIsLoading(false);
     };
-
+  
     obtainTasks();
-  }, [isLoading]);
-
+  }, [tasks]);
 
 
   const addTask = (task:Task) => {
