@@ -9,11 +9,14 @@
 - Paredes, Paulina
 
 
-
 ## Descripción
 ### Dominio: Aplicación de Lista de Tareas - (To-Do List)
 Es una aplicación web que realiza la función de anotador de tareas, se pueden crear, buscar, marcar como completadas y eliminar tareas de la lista.
 Especificación:
+
+## 🖥️ Previsualización
+![Captura de pantalla 2024-04-19 171837](https://github.com/thadek/pwa-2024-tp1/assets/86857679/6b619376-aa2a-412f-b3b3-d97c75279073)
+![Captura de pantalla 2024-04-19 171857](https://github.com/thadek/pwa-2024-tp1/assets/86857679/2e59af0d-d789-4f3d-b380-15114ec2f284)
 
 ## Instalación
 1) Clonar el repo y ejecutar ```npm install```
