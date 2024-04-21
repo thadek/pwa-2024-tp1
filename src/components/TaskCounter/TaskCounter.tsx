@@ -1,13 +1,13 @@
-import { useTasks } from '../../hooks/useTasks';
+import { Task } from "../../types/Task";
 
-const TaskCounter: React.FC = () => {
-  const { tasks } = useTasks();
+const TaskCounter = ({tasks}:{tasks:Task[]}) => {
+  
   const totalTasks = tasks.length;
   const completedTasks = tasks.filter(task => task.completed).length;
   const remainingTasks = totalTasks - completedTasks;
 
   return (
-    <div className="flex-col items-center w-full justify-between rounded-lg gap-2 p-2 bg-white text-black border-2 border-blue-400">
+    <div className="flex flex-col items-center justify-between rounded-lg gap-2 p-2 bg-white text-black border-2 border-blue-400">
       <p>Tareas totales: {totalTasks}</p>
       <p>Tareas completadas: {completedTasks}</p>
       <p>Tareas restantes: {remainingTasks}</p>

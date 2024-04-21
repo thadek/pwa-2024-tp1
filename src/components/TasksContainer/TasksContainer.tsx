@@ -57,8 +57,8 @@ export default function TasksContainer() {
 
 
         <Title title="Grupo 12 PWA - TodoList" />
-        <div className=" left-0 p-4 bg-gray-200">
-        <TaskCounter />
+        <div className=" w-full">
+        <TaskCounter tasks={tasks} />
          </div>
 
       

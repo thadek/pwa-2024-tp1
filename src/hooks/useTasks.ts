@@ -7,17 +7,18 @@ export const useTasks = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
+
+
   useEffect(() => {
-    const obtainTasks = async () => {
+    const obtainTasks = () => {
       const tasks = localStorage.getItem("tasks");
       if (tasks) {
         setTasks(JSON.parse(tasks));
       }
-      setIsLoading(false);
-    };
-  
+    }; 
     obtainTasks();
-  }, [tasks]);
+    return () => setIsLoading(false);
+  }, []);
 
 
   const addTask = (task:Task) => {
